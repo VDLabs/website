@@ -1,0 +1,26 @@
+/* from Eric Meyer: v2.0b1 | 201101 */
+ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{border:0;font:inherit;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section{display:block}
+ body{line-height:1}
+ ol, ul{list-style:none}
+ blockquote, q{quotes:none}
+ blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+ ins{text-decoration:none}
+ del{text-decoration:line-through}
+ table{border-collapse:collapse;border-spacing:0}
+ /* end of Eric Meyer's CSS Reset */
+ .hatchshow_container{text-align:center;margin:0 auto;transition:color 0.5s;}
+ .hsjs{visibility:hidden}
+ a{color:#c00;text-decoration:none}
+ body{font-family:'Ultra','helvetica neue', helvetica, arial;padding:30px 30px 30px; overflow-x: hidden}
+ h1{font-weight:normal;padding:1em 0 2em;text-align:center}
+ h3{background:#444;color:#fff;font-size:24px;text-align:left;padding: 4px 15px}
+ hr{background:none;border:0;border-top:10px solid #000;height:0;margin-top:0px;padding-top:5px;visibility:hidden}
+ p{line-height:1.2}
+ span.hsjs{line-height:1;position:relative;text-transform:uppercase;}
+ h1 span{line-height:.9}
+.purple { color: #2E0854; }
+.gray { color: #CCC; }
+.italic { font-style: italic; }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Design Lab - Web Consulting dreamteam</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+  <span class="hsjs">Virtual Design Lab</span>
+  <span class="hsjs gray italic">"The cobbler's children are always the worst-shod"</span>
+  <div style="margin-top:25px">
+    <div class="hatchshow_container" style="float:left;margin-right:3%;width:48%;">
+      <p>
+        <span class="hsjs purple">WHAT we do?</span>
+        <span class="hsjs">JavaScript Consulting</span>
+        <span class="hsjs">Full Stack Trainings</span>
+        <span class="hsjs">Web App management and development</span>
+        <span class="hsjs">High Quality code audith</span>
+        <span class="hsjs">Desktop Mobile Server and anywhere</span>
+        <span class="hsjs" style="top:-0.12em">ELSE</span>
+      </p>
+    </div>
+    <div class="hatchshow_container" style="float:left;width:48%">
+      <p>
+        <span class="hsjs purple">WHO are we?</span>
+        <span class="hsjs">experienced developers with</span>
+        <span class="hsjs">12+ years of experience</span>
+        <span class="hsjs">(EACH)</span>
+        <span class="hsjs">and 210+ realised projects</span>
+        <span class="hsjs">who threat Web development</span>
+        <span class="hsjs">as their life style</span>
+      </p>
+    </div>
+  </div>
+  <div class="hatchshow_container">
+    <span class="hsjs purple">We have worked with</span>
+    <span class="hsjs">Mozilla Joyent NPM GTECH Walmart Irish TV Sauce Labs </span>
+    <span class="hsjs">Trekanten Prestashop Galeria Koloru jQuery Amazon Google </span>
+    <span class="hsjs">Adidas MtGox HP Samsung BlackBerry Adobe Netflix </span>
+    <span class="hsjs">Bonjourpack JSNews Spacedock Hodutu</span>
+    <span class="hsjs">And many more</span>
+  </div>
+  <div class="hatchshow_container" style="float:left;margin-right:4%;width:30%">
+    <p>
+      <span class="hsjs purple" style="top:.12em">Frameworks?</span>
+      <span class="hsjs">Angular React Knockout</span>
+      <span class="hsjs">ExtJS jQuery</span>
+      <span class="hsjs">fabricJS MaterializedCSS</span>
+      <span class="hsjs">and probably everything you can</span>
+      <span class="hsjs">IMAGINE</span>
+    </p>
+  </div>
+  <div class="hatchshow_container" style="float:left;margin-right:4%;width:30%">
+    <p>
+      <span class="hsjs purple" style="top:.12em">Technologies?</span>
+      <span class="hsjs">VanillaJS ES2015</span>
+      <span class="hsjs">nodejs npm bower</span>
+      <span class="hsjs">Cordoba Appcelerator</span>
+      <span class="hsjs">CocoonJS AdobeCQ </span>
+      <span class="hsjs">and anything suitable for</span>
+      <span class="hsjs">your app</span>
+    </p>
+  </div>
+  <div class="hatchshow_container" style="float:left;width:30%">
+    <p>
+      <span class="hsjs purple" style="top:.12em">OPEN SOURCE?</span>
+      <span class="hsjs">Our team is active in</span>
+      <span class="hsjs">the open source community</span>
+      <span class="hsjs">We have been or still are involved </span>
+      <span class="hsjs">in maintaining or contributing to </span>
+      <span class="hsjs">open web projects, fixing bugs, </span>
+      <span class="hsjs">giving new ideas and spreading </span>
+      <span class="hsjs">the word</span>
+    </p>
+  </div>
+  <div class="hatchshow_container">
+    <p>
+      <span class="hsjs purple">WORK WITH US</span>
+      <span class="hsjs" style="text-decoration:underline">eu@vdlabs.com - us@vdlabs.com - apac@vdlabs.com</span>
+    </p>
+  </div>
+  <span class="hsjs gray italic" style="top:20px; ">"The cobbler's children are always the worst-shod"</span>
+    <script type="text/javascript" charset="utf-8">
+     $(window).load(function(){
+       $().hatchShow();
+     });
+     jQuery.fn.hatchShow = function(){
+       $('.hsjs').css('display','inner-block').css('white-space','pre').each(function(){
+         var t = $(this);
+         t.wrap("<span class='hatchshow_temp' style='display:block'>");
+         var pw = t.parent().width();
+         while( t.width() < pw ){t.css('font-size', (t.fontSize()+1)+"px"),
+           function(){while( t.width() > pw ){t.css('font-size', (t.fontSize()-.1)+"px")}};
+         };
+       }).css('visibility','visible');
+     };
+     jQuery.fn.fontSize = function(){return parseInt($(this).css('font-size').replace('px',''));};
+
+    </script>
+  </body>
+</html>
